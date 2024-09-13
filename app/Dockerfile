@@ -34,6 +34,7 @@ RUN npm ci && REACT_APP_API_URL=$REACT_APP_API_URL npm run build
 # Run the server component
 FROM base AS server-production
 RUN apt update && apt install --yes python3 && rm -rf /var/lib/apt/lists/*
+RUN npm install
 ENV NODE_ENV production
 WORKDIR /app
 COPY --from=server-builder /app/node_modules ./node_modules
@@ -49,6 +50,7 @@ ENTRYPOINT ["npm", "run", "start-production"]
 
 # Run the web-app
 #FROM simon/static-web-server AS web-app-production
+#joseluisq/static-web-server
 #ARG PORT
 #ENV SERVER_PORT=$PORT
 #COPY --from=web-app-builder /wasp/.wasp/build/web-app/build /public
