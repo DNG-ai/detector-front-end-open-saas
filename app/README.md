@@ -10,3 +10,12 @@ Built with [Wasp](https://wasp-lang.dev), based on the [Open Saas](https://opens
  - Run `wasp start` and leave it running.
  - [OPTIONAL]: If this is the first time starting the app, or you've just made changes to your entities/prisma schema, also run `wasp db migrate-dev`.
 
+
+
+postgres DB 
+
+in .wasp/out/server/.env
+DATABASE_URL="postgresql://postgresWaspDevUser:postgresWaspDevPass@localhost:5432/OpenSaaS-fe2fdef8f2"
+
+
+username: postgresWaspDevUser
