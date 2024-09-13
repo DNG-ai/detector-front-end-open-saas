@@ -48,7 +48,7 @@ WORKDIR /app/.wasp/build/server
 ENTRYPOINT ["npm", "run", "start-production"]
 
 # Run the web-app
-FROM joseluisq/static-web-server AS web-app-production
+FROM simon/static-web-server AS web-app-production
 ARG PORT
 ENV SERVER_PORT=$PORT
 COPY --from=web-app-builder /wasp/.wasp/build/web-app/build /public
