@@ -6,3 +6,12 @@ This project is based on [OpenSaas](https://opensaas.sh) template and consists o
 3. `blog` - Your blog / docs, built with [Astro](https://docs.astro.build) based on [Starlight](https://starlight.astro.build/) template.
 
 For more details, check READMEs of each respective directory!
+
+
+Postgres Staging
+
+
+simonSimon9$
+
+
+postgresql://postgres:simonSimon9$@34.122.189.106:5432/postgres-detector

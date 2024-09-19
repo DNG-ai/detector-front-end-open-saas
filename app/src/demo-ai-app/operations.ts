@@ -2,6 +2,7 @@ import type { Task, GptResponse } from 'wasp/entities';
 import type {
   GenerateGptResponse,
   CreateTask,
+  DetectText,
   DeleteTask,
   UpdateTask,
   GetGptResponses,
@@ -194,6 +195,26 @@ export const createTask: CreateTask<Pick<Task, 'description'>, Task> = async ({ 
   });
 
   return task;
+};
+
+type TextDetect = {
+  text: string
+  lang: string
+}
+
+export const detectText: DetectText<TextDetect,TextDetect> = async ({ text }, context) => {
+  if (!context.user) {
+    throw new HttpError(401);
+  }
+  console.info('detect text')
+  //const task = await context.entities.Task.create({
+  ///  data: {
+     // description,
+     // user: { connect: { id: context.user.id } },
+    //},
+  //});
+  const textDetect = {text:'hello', lang:'en'};
+  return textDetect;
 };
 
 export const updateTask: UpdateTask<Partial<Task>, Task> = async ({ id, isDone, time }, context) => {

@@ -5,6 +5,7 @@ import {
   deleteTask,
   updateTask,
   createTask,
+  detectText,
   useQuery,
   getAllTasksByUser,
 } from 'wasp/client/operations';
@@ -139,6 +140,14 @@ function NewTaskForm({ handleCreateTask }: { handleCreateTask: typeof createTask
     <div className='flex flex-col justify-center gap-10'>
       <div className='flex flex-col gap-3'>
         <div className='flex items-center justify-between gap-3'>
+        
+        <button
+                               type='button'
+                               onClick={(e)=>{console.info('hello'); console.info('bye'); detectText({text:'hello', lang:'en'})}}
+                               className='min-w-[7rem] font-medium text-gray-800/90 bg-yellow-50 shadow-md ring-1 ring-inset ring-slate-200 py-2 px-4 rounded-md hover:bg-yellow-100 duration-200 ease-in-out focus:outline-none focus:shadow-none hover:shadow-none'
+                             >
+                             DetectText
+                             </button>
           <input
             type='text'
             id='description'

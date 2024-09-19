@@ -162,6 +162,11 @@ action createTask {
   entities: [Task]
 }
 
+action detectText {
+  fn: import { detectText } from "@src/demo-ai-app/operations",
+ // entities: [Task]
+}
+
 action deleteTask {
   fn: import { deleteTask } from "@src/demo-ai-app/operations",
   entities: [Task]
