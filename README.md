@@ -23,3 +23,10 @@ postgresql://postgres:simonSimon9$@34.122.189.106:5432/postgres-detector
 
 need to put postgres on VPC using private IP of db
 
+
+
+cd .wasp/build/web-app
+
+npm install && REACT_APP_API_URL=https://detector-front-end-open-saas-728107681887.us-central1.run.app npm run build
+
+
