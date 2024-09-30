@@ -1,0 +1,29 @@
+OPENSAAS Test
+
+pre-requisite:
+
+Node.js must be >= 18
+
+Wasp:
+https://docs.opensaas.sh/start/getting-started/
+
+to install wasp on Linux/Mac
+curl -sSL https://get.wasp-lang.dev/installer.sh | sh
+
+
+
+Get Source from DNG
+
+Launch Postgres through local install or local docker
+
+In project source
+cd app
+wasp start db
+
+in new terminal window in app folder
+
+wasp db migrate-dev
+
+finally 
+
+wasp start
