@@ -24,6 +24,12 @@ postgresql://postgres:simonSimon9$@34.122.189.106:5432/postgres-detector
 need to put postgres on VPC using private IP of db
 
 
+follow this for back-end
+https://github.com/wasp-lang/open-saas/issues/178
+
+Current status: Deployment using CLoudrun with trigger works.
+Need the front.
+
 
 cd .wasp/build/web-app
 
