@@ -8,20 +8,6 @@ This project is based on [OpenSaas](https://opensaas.sh) template and consists o
 For more details, check READMEs of each respective directory!
 
 
-Postgres Staging
-
-
-simonSimon9$
-
-
-postgresql://postgres:simonSimon9$@34.122.189.106:5432/postgres-detector
-
-,
-
-
-
-
-need to put postgres on VPC using private IP of db
 
 
 
